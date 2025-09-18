@@ -1,0 +1,205 @@
+/* Global styles */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section Background */
+.hero-bg {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1541123437800-1bb589b7fdee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); */
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  animation: slideBackground 15s infinite; /* Animation for background image */
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+/* Navbar styles */
+nav {
+  background-color: #2d3748;
+  padding: 1rem;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .container a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+nav .container a:hover {
+  color: #edf2f7;
+}
+
+.cta-button {
+  background-color: #3182ce;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+   transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #2b6cb0;
+}
+
+/* Features Section */
+#features {
+  padding: 4rem 2rem;
+  background-color: #edf2f7;
+  text-align: center;
+}
+
+#features h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  color: #4a5568;
+}
+
+/* Testimonials Section */
+#testimonials {
+  padding: 4rem 2rem;
+}
+
+#testimonials h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+/* Pricing Section */
+#pricing {
+  padding: 4rem 2rem;
+  background-color: #edf2f7;
+  text-align: center;
+}
+
+#pricing h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#pricing p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+/* Footer Section */
+footer {
+  background-color: #2d3748;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #edf2f7;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+  .feature-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .feature-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .testimonial-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@keyframes slideBackground {
+    0% {
+        background-image: url('../public/images/hostal2.jpg');
+    }
+    33% {
+        background-image: url('../public/images/hostal1.jpg');
+    }
+    66% {
+        background-image: url('../public/images/hostal2.jpg');
+    }
+    100% {
+        background-image: url('../public/images/hostal1.jpg');
+    }
+}
