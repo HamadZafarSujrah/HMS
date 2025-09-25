@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../includes/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management System</title>
+   
+</head>
+<body>
+       <div id="nav"></div>
+
+    
+    
+    
+    <script src="../react-lib/react.development.js"></script>
+    <script src="../react-lib/react-dom.development.js"></script>
+    <script>
+        // const e = React.createElement;
+
+        // function Navbar() {
+        //     return (
+        //         e('nav', null,
+        //             e('div', { className: 'container' },
+        //                 e('div', { style: { color: 'aliceblue', fontSize: 'x-large' } }, 'HMS'),
+        //                 e('div', { className: 'nav-links' },
+        //                     e('a', { href: '#features' }, 'Features'),
+        //                     e('a', { href: '#pricing' }, 'Pricing'),
+        //                     e('a', { href: '/login' }, 'Login'),
+        //                     e('a', { href: '/signup', className: 'cta-button' }, 'Sign Up')
+        //                 )
+        //             )
+        //         )
+        //     );
+        // }
+
+        const nav = React.createElement(
+            'nav',
+            null,
+            React.createElement(
+                'div',
+                { className: 'container' },
+                React.createElement(
+                    'div',
+                    { style: { color: 'aliceblue', fontSize: 'x-large' } },
+                    'HMS'
+                ),
+                React.createElement(
+                    'div',
+                    { className: 'nav-links' },
+                    React.createElement('a', { href: '#features' }, 'Features'),
+                    React.createElement('a', { href: '#pricing' }, 'Pricing'),
+                    React.createElement('a', { href: '/login' }, 'Login'),
+                    React.createElement('a', { href: '/signup', className: 'cta-button' }, 'Sign Up')
+                )
+            )
+        )
+
+
+        ReactDOM.render(e(Navbar), document.getElementById('nav'));
+    </script>
+
+</body>
+</html>

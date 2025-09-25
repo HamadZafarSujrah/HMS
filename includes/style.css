@@ -14,8 +14,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  text-align: center;
+  color: rgb(2, 2, 2);
+  text-align: center;   
   animation: slideBackground 15s infinite; /* Animation for background image */
 }
 
